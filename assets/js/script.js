@@ -10,4 +10,21 @@ function toggleRest() {
             $("#col-btn2").removeClass("d-none");
         }, 1100);
     }
+    
+    var cosaClickeable = document.querySelector("#botonDescanso");
+    // Static Variable Initialization. On the first click, "this.counter" doesn't exist, hence it's created with a zero value.
+    if( typeof this.counter == 'undefined' ) {
+        this.counter = 0;
+    }
+
+    if(this.counter === 0) {
+        hola=true;
+        console.log(this.counter + "funcion 1");
+        this.counter++;
+    } 
+    else if(this.counter === 1) {
+        hola=false;
+        console.log(this.counter + "funcion 2");
+        this.counter--;
+    }
 }

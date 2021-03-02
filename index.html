@@ -38,7 +38,7 @@
         <section style="margin-top: 25px;">
             <div class="row">
                 <div class="col-sm-12 col-md-12">
-                    <h1 id="demo" data-aos="zoom-in" data-aos-delay="150" data-aos-once="true" class="indexTime" style="color: white;">00d 20h 10m 05s</h1>
+                    <h1 id="demo" data-aos="zoom-in" data-aos-delay="150" data-aos-once="true" class="indexTime" style="color: white;">64d 0h 40m 54s</h1>
                 </div>
             </div>
             <!-- Start: Rest/Work Buttons -->
@@ -198,6 +198,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
+      
         // Set the date we're counting down to
         var countDownDate = new Date("May 5, 2021 15:37:25").getTime();
         
@@ -216,16 +217,19 @@
           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
-          // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-            
+          if(hola){
+                 // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+            }
+         
           // If the count down is over, write some text 
           if (distance < 0) {
             clearInterval(x);
             document.getElementById("demo").innerHTML = "0d 0h 0m 0s";
           }
         }, 1000);
+    
         </script>
         
 </body>
