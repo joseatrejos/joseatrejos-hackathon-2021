@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/css/-Fixed-Navbar-start-with-transparency-background-BS4-.css">
     <link rel="stylesheet" href="assets/css/Advanced-NavBar---Multi-dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -22,29 +23,17 @@
 </head>
 
 <body>
-    <!-- Start: ♣ Fixed Navbar start with transparency background -->
-    <div>
-        <!-- Start: Menu + header background -->
-        <header>
-            <!-- Start: Cool Navbar -->
-            <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white transparency border-bottom border-light" id="transmenu">
-                <div class="container"><a class="navbar-brand text-primary" href="index.html" style="text-shadow: 1px 1px 2px;">&nbsp;Inno Soluciones</a><button data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navcol-1"><span></span><span></span><span></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html" style="text-align: center;">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="tasks.html" style="text-align: center;">Actividades</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- End: Cool Navbar -->
-        </header>
-        <!-- End: Menu + header background -->
-    </div>
-    <!-- End: ♣ Fixed Navbar start with transparency background -->
-
-    <main class="text-center text-white page landing-page" style="background-color: #1F1F1F;padding-top: 75px;overflow: hidden;">
-        <!-- Start: Title -->
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white transparency border-bottom border-light" id="transmenu">
+        <div class="container"><a class="navbar-brand text-primary" data-aos="fade" data-aos-duration="800" data-aos-once="true" href="index.html" style="text-shadow: 1px 1px 2px;">&nbsp;Inno Soluciones</a><button data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navcol-1"><span></span><span></span><span></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" data-aos="fade" data-aos-duration="800" data-aos-delay="150"><a class="nav-link" href="index.html" style="text-align: center;">Inicio</a></li>
+                    <li class="nav-item" data-aos="fade" data-aos-duration="800" data-aos-delay="300"><a class="nav-link" href="tasks.html" style="text-align: center;">Actividades</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="text-center text-white page landing-page" style="background-color: #1F1F1F;padding-top: 75px;overflow: hidden;min-height: 100%;">
         <div class="container" style="margin-top: 70px;">
             <div class="row">
                 <div class="col" style="margin-bottom: 10px;">
@@ -52,171 +41,83 @@
                 </div>
             </div>
         </div>
-        <!-- End: Title -->
-
-        <!-- Start: Task Card -->
         <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
             <div class="row">
                 <div class="col-1 col-sm-1 col-md-1 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center checkbox"><input type="checkbox"></div>
-                <div class="col-10 col-sm-11 col-md-11 text-left">
-                    <!-- Start: Title --><a class="anone" href="taskDetails.html">
+                <div class="col-10 col-sm-11 col-md-11 text-left"><a class="anone" href="taskDetails.html">
                         <h2 class="text-white">Primeros contactos con el cliente</h2>
                     </a>
-                    <!-- End: Title -->
-
-                    <!-- Start: Client -->
-                    <h3 style="background-color: #0EA0FF;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">
-                        Universidad La Salle Noroeste
-                    </h3>
-                    <!-- End: Client -->
-                    
-                    <!-- Start: Deadline (Date and time) -->
-                    <a class="anone" href="taskDetails.html">
+                    <h3 style="background-color: #0EA0FF;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">Universidad La Salle Noroeste</h3><a class="anone" href="taskDetails.html">
                         <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
                             <p class="period text-white-50" style="color: black;font-size: 14px;">01/15/2021<br></p>
                             <p class="period text-white-50" style="color: black;font-size: 14px;">3:00 pm<br></p>
                         </div>
-                    </a>
-                    <!-- End: Deadline (Date and time) -->
-
-                    <!-- Start: Task Description -->
-                    <a class="anone" href="taskDetails.html">
+                    </a><a class="anone" href="taskDetails.html">
                         <p class="text-white" style="margin-top: -15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, feugiat est sed, efficitur nunc, vivamus vel accumsan dui.</p>
                     </a>
-                    <!-- End: Task Description -->
-
                     <hr class="text-white" style="height: 1px;background-color: #ccc;border: none;margin-top: 25px;">
                 </div>
             </div>
         </div>
-        <!-- End: Task Card -->
-
-        <!-- Start: Task Card -->
         <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
             <div class="row">
                 <div class="col-1 col-sm-1 col-md-1 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center checkbox"><input type="checkbox"></div>
-                <div class="col-10 col-sm-11 col-md-11 text-left">
-                    <!-- Start: Title --><a class="anone" href="taskDetails.html">
+                <div class="col-10 col-sm-11 col-md-11 text-left"><a class="anone" href="taskDetails.html">
                         <h2 class="text-white">Task 2</h2>
                     </a>
-                    <!-- End: Title -->
-
-                    <!-- Start: Client -->
-                    <h3 style="background-color: #00B770;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">
-                        Client 1
-                    </h3>
-                    <!-- End: Client -->
-
-                    <!-- Start: Deadline (Date and time) -->
-                    <a class="anone" href="taskDetails.html">
+                    <h3 style="background-color: #00B770;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">Client 1</h3><a class="anone" href="taskDetails.html">
                         <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
                             <p class="period text-white-50" style="font-size: 14px;">01/15/2021<br></p>
                             <p class="period text-white-50" style="color: black;font-size: 14px;">3:00 pm<br></p>
                         </div>
+                    </a><a class="anone" href="taskDetails.html">
+                        <p class="text-white" style="margin-top: -15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, feugiat est sed, efficitur nunc, vivamus vel accumsan dui.</p>
                     </a>
-                    <!-- End: Deadline (Date and time) -->
-
-                    <!-- Start: Task Description -->
-                    <a class="anone" href="taskDetails.html">
-                        <p class="text-white" style="margin-top: -15px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, feugiat est sed, 
-                            efficitur nunc, vivamus vel accumsan dui.
-                        </p>
-                    </a>
-                    <!-- End: Task Description -->
-
                     <hr style="height: 1px;background-color: #ccc;border: none;margin-top: 25px;">
                 </div>
             </div>
         </div>
-        <!-- End: Task Card -->
-
-        <!-- Start: Task Card -->
-        <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
-            <div class="row">
-                <div class="col-1 col-sm-1 col-md-1 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center checkbox">
-                    <input type="checkbox">
-                </div>
-
-                <div class="col-10 col-sm-11 col-md-11 text-left">
-                    <!-- Start: Title --><a class="anone" href="taskDetails.html">
-                        <h2 class="text-white">Task 3</h2>
-                    </a>
-                    <!-- End: Title -->
-
-                    <!-- Start: Client -->
-                    <h3 style="background-color: #FF5A48;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">
-                        Client 2<br>
-                    </h3>
-                    <!-- End: Client -->
-                    
-                    <!-- Start: Deadline (Date and time) --><a class="anone" href="taskDetails.html">
-                        <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
-                            <p class="period text-white-50" style="color: black;font-size: 14px;">01/15/2021<br></p>
-                            <p class="period text-white-50" style="color: black;font-size: 14px;">3:00 pm<br></p>
-                        </div>
-                    </a>
-                    <!-- End: Deadline (Date and time) -->
-
-                    <!-- Start: Task Description -->
-                    <a class="anone" href="taskDetails.html">
-                        <p class="text-white" style="margin-top: -15px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, 
-                            feugiat est sed, efficitur nunc, vivamus vel accumsan dui.
-                        </p>
-                    </a>
-                    <!-- End: Task Description -->
-
-                    <hr style="height: 1px;background-color: #ccc;border: none;margin-top: 25px;">
-                </div>
-            </div>
-        </div>
-        <!-- End: Task Card -->
-
-        <!-- Start: Task Card -->
         <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
             <div class="row">
                 <div class="col-1 col-sm-1 col-md-1 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center checkbox"><input type="checkbox"></div>
-                <div class="col-10 col-sm-11 col-md-11 text-left">
-                    <!-- Start: Title --><a class="anone" href="taskDetails.html">
-                        <h2 class="text-white">Task 4</h2>
+                <div class="col-10 col-sm-11 col-md-11 text-left"><a class="anone" href="taskDetails.html">
+                        <h2 class="text-white">Task 3</h2>
                     </a>
-                    <!-- End: Title -->
-
-                    <!-- Start: Client -->
-                    <h3 style="background-color:#E58845; color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">
-                        Client 3<br>
-                    </h3>
-                    <!-- End: Client -->
-
-                    <!-- Start: Deadline (Date and time) -->
-                    <a class="anone" href="taskDetails.html">
+                    <h3 style="background-color: #FF5A48;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">Client 2<br></h3><a class="anone" href="taskDetails.html">
                         <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
                             <p class="period text-white-50" style="color: black;font-size: 14px;">01/15/2021<br></p>
                             <p class="period text-white-50" style="color: black;font-size: 14px;">3:00 pm<br></p>
                         </div>
+                    </a><a class="anone" href="taskDetails.html">
+                        <p class="text-white" style="margin-top: -15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, feugiat est sed, efficitur nunc, vivamus vel accumsan dui.</p>
                     </a>
-                    <!-- End: Deadline (Date and time) -->
-
-                    <!-- Start: Task Description -->
-                    <a class="anone" href="taskDetails.html">
-                        <p class="text-white" style="margin-top: -15px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, 
-                            feugiat est sed, efficitur nunc, vivamus vel accumsan dui.
-                        </p>
-                    </a>
-                    <!-- End: Task Description -->
+                    <hr style="height: 1px;background-color: #ccc;border: none;margin-top: 25px;">
                 </div>
             </div>
-        </div><!-- End: Task Card -->
+        </div>
+        <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
+            <div class="row">
+                <div class="col-1 col-sm-1 col-md-1 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center checkbox"><input type="checkbox"></div>
+                <div class="col-10 col-sm-11 col-md-11 text-left"><a class="anone" href="taskDetails.html">
+                        <h2 class="text-white">Task 4</h2>
+                    </a>
+                    <h3 style="background-color:#E58845; color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">Client 3<br></h3><a class="anone" href="taskDetails.html">
+                        <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
+                            <p class="period text-white-50" style="color: black;font-size: 14px;">01/15/2021<br></p>
+                            <p class="period text-white-50" style="color: black;font-size: 14px;">3:00 pm<br></p>
+                        </div>
+                    </a><a class="anone" href="taskDetails.html">
+                        <p class="text-white" style="margin-top: -15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, feugiat est sed, efficitur nunc, vivamus vel accumsan dui.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
-
     <footer class="text-center text-white" style="padding-top: 20px;background-color: #292929;">
         <p style="padding-bottom: 10px;">© 2021 Copyright Text</p>
     </footer>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
