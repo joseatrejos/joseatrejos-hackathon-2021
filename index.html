@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
+<style>
+
+</style>
 </head>
 
 <body>
@@ -40,7 +43,7 @@
             <!-- Start: Accumulated Hours -->
             <div class="row">
                 <div class="col-sm-12 col-md-12">
-                    <h1 data-aos="zoom-in" data-aos-delay="150" data-aos-once="true" class="indexTime" style="color: white;">00d 20h 10m 05s</h1>
+                    <p id="demo" style="font-size:55px" class="indexTime" style="color: white;">00d 20h 10m 05s</p>
                 </div>
             </div>
             <!-- End: Accumulated Hours -->
@@ -48,7 +51,7 @@
             <!-- Start: Rest/Work Buttons -->
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6 text-center" style="margin-top: 60px;"><a class="btn btn-primary" role="button" data-aos="fade-right" data-aos-duration="400" data-aos-delay="450" data-aos-once="true" style="font-size: 38px;border-radius: 10px;padding-right: 30px;padding-left: 30px;">Descansar</a></div>
-                <div class="col-sm-12 col-md-6 col-lg-6 text-center"><a class="btn btn-success botonTrabajo" role="button" data-aos="fade-left" data-aos-duration="400" data-aos-delay="450" data-aos-once="true" style="border-radius: 10px;margin-top: 60px;">Adelantar Trabajo</a></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 text-center"><a class="btn btn-success botonTrabajo" role="button" data-aos="fade-left" data-aos-duration="400" data-aos-delay="450" data-aos-once="true" style="border-radius: 10px;margin-top: 60px;">Adelantar </a></div>
             </div>
             <!-- End: Rest/Work Buttons -->
         </section>
@@ -68,6 +71,37 @@
     <script src="assets/js/-Fixed-Navbar-start-with-transparency-background-BS4-.js"></script>
     <script src="assets/js/Advanced-NavBar---Multi-dropdown.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 5, 2021 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "0d 0h 0m 0s";
+          }
+        }, 1000);
+        </script>
+        
 </body>
 
 </html>

@@ -20,6 +20,7 @@
   transition: all 650ms;
 }
 
+
 .btnCustom:hover:before {
   left: 100%;
 }
@@ -27,56 +28,6 @@
 /* ---------------------------------------------------
 CSS responsive breakpoints' media queries */
 
-@media only screen and (min-width: 1301px) {
-  .indexTime {
-    font-size: 90px;
-  }
-}
-
-@media only screen and (min-width: 801px) and (max-width: 1300px) {
-  .indexTime {
-    font-size: 90px;
-    margin-top: 30%;
-  }
-}
-
-@media only screen and (min-width: 620px) and (max-width: 800px) {
-  .indexTime {
-    font-size: 70px;
-  }
-}
-
-@media only screen and (min-width: 450px) and (max-width: 619px) {
-  .indexTime {
-    font-size: 50px;
-  }
-}
-
-@media only screen and (min-width: 360px) and (max-width: 449px) {
-  .indexTime {
-    font-size: 40px;
-  }
-}
-
-@media only screen and (min-width: 280px) and (max-width: 359px) {
-  .indexTime {
-    font-size: 30px;
-  }
-}
-
-/* boton "Trabajar" del Index */
-
-@media only screen and (min-width: 280px) and (max-width: 369px) {
-  .botonTrabajo {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (min-width: 370px) and (max-width: 385px) {
-  .botonTrabajo {
-    font-size: 36px;
-  }
-}
 
 @media only screen and (min-width: 385px) and (max-width: 767px) {
   .botonTrabajo {
@@ -92,7 +43,7 @@ CSS responsive breakpoints' media queries */
 
 @media only screen and (min-width: 781px) {
   .botonTrabajo {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
