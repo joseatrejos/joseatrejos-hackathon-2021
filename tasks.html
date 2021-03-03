@@ -19,12 +19,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
     <link rel="stylesheet" href="assets/css/checkbox.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top transparency border-dark" id="transmenu" style="background-color: #272727;">
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top transparency border-dark" id="transmenu" style="background-color: #272727;">
         <div class="container">
             <a class="navbar-brand text-white" data-aos="fade" data-aos-duration="800" data-aos-once="true" href="index.html" style="text-shadow: 1px 1px 2px;">
                 &nbsp;Inno Soluciones
@@ -52,106 +53,120 @@
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
-            <div class="row">
-                <div class="col-12 text-left">
-                    <input type="checkbox" id="one">
-                    <label for="one">
-                        <span></span>
+        <section id="loader">
+            <div class="spinner">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </section>
+        <div id="content">
+            <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="row">
+                    <div class="col-12 text-left">
+                        <input type="checkbox" id="one">
+                        <label for="one">
+                            <span></span>
+                            <a class="anone" href="taskDetails.html">
+                                <h2 class="text-white">Primeros contactos con el cliente</h2>
+                            </a>
+                        </label>
+                        <h3 style="background-color: #0EA0FF;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">Universidad La Salle Noroeste</h3>
                         <a class="anone" href="taskDetails.html">
-                            <h2 class="text-white">Primeros contactos con el cliente</h2>
+                            <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
+                                <p class="period text-white-50" style="color: black;font-size: 14px;">03/02/2021<br></p>
+                                <p class="period text-white-50" style="color: black;font-size: 14px;">3:00 pm<br></p>
+                            </div>
                         </a>
-                    </label>
-                    <h3 style="background-color: #0EA0FF;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">Universidad La Salle Noroeste</h3>
-                    <a class="anone" href="taskDetails.html">
-                        <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
-                            <p class="period text-white-50" style="color: black;font-size: 14px;">03/02/2021<br></p>
-                            <p class="period text-white-50" style="color: black;font-size: 14px;">3:00 pm<br></p>
-                        </div>
-                    </a>
-                    <a class="anone" href="taskDetails.html">
-                        <p class="text-white" style="margin-top: -15px;">Primera junta con el cliente para establecer lineamientos del proyecto.</p>
-                    </a>
-                    <hr class="text-white" style="height: 1px;background-color: #ccc;border: none;margin-top: 25px;">
+                        <a class="anone" href="taskDetails.html">
+                            <p class="text-white" style="margin-top: -15px;">Primera junta con el cliente para establecer lineamientos del proyecto.</p>
+                        </a>
+                        <hr class="text-white" style="height: 1px;background-color: #ccc;border: none;margin-top: 25px;">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
-            <div class="row">
-                <div class="col-12 text-left">
-                    <input type="checkbox" id="two">
-                    <label for="two">
-                        <span></span>
+            <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="row">
+                    <div class="col-12 text-left">
+                        <input type="checkbox" id="two">
+                        <label for="two">
+                            <span></span>
+                            <a class="anone" href="taskDetails.html">
+                                <h2 class="text-white">Enviar reporte mensual</h2>
+                            </a>
+                        </label>
+                        <h3 style="background-color: #00B770;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">AMWE Technologies</h3>
                         <a class="anone" href="taskDetails.html">
-                            <h2 class="text-white">Enviar reporte mensual</h2>
+                            <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
+                                <p class="period text-white-50" style="font-size: 14px;">03/03/2021<br></p>
+                                <p class="period text-white-50" style="color: black;font-size: 14px;">8:00 pm<br></p>
+                            </div>
                         </a>
-                    </label>
-                    <h3 style="background-color: #00B770;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">AMWE Technologies</h3>
-                    <a class="anone" href="taskDetails.html">
-                        <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
-                            <p class="period text-white-50" style="font-size: 14px;">03/03/2021<br></p>
-                            <p class="period text-white-50" style="color: black;font-size: 14px;">8:00 pm<br></p>
-                        </div>
-                    </a>
-                    <a class="anone" href="taskDetails.html">
-                        <p class="text-white" style="margin-top: -15px;">Elaborar y enviar el reporte mensual de análisis al cliente, no olvidar adjuntar imagenes de los documentos relacionados.</p>
-                    </a>
-                    <hr style="height: 1px;background-color: #ccc;border: none;margin-top: 25px;">
+                        <a class="anone" href="taskDetails.html">
+                            <p class="text-white" style="margin-top: -15px;">Elaborar y enviar el reporte mensual de análisis al cliente, no olvidar adjuntar imagenes de los documentos relacionados.</p>
+                        </a>
+                        <hr style="height: 1px;background-color: #ccc;border: none;margin-top: 25px;">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
-            <div class="row">
-                <div class="col-12 text-left">
-                    <input type="checkbox" id="three">
-                    <label for="three">
-                        <span></span>
+            <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="row">
+                    <div class="col-12 text-left">
+                        <input type="checkbox" id="three">
+                        <label for="three">
+                            <span></span>
+                            <a class="anone" href="taskDetails.html">
+                                <h2 class="text-white">Generación de propuesta</h2>
+                            </a>
+                        </label>
+                        <h3 style="background-color: #FF5A48;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">Luden's Echo<br></h3>
                         <a class="anone" href="taskDetails.html">
-                            <h2 class="text-white">Generación de propuesta</h2>
+                            <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
+                                <p class="period text-white-50" style="color: black;font-size: 14px;">03/04/2021<br></p>
+                                <p class="period text-white-50" style="color: black;font-size: 14px;">10:00 am<br></p>
+                            </div>
                         </a>
-                    </label>
-                    <h3 style="background-color: #FF5A48;color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">Luden's Echo<br></h3>
-                    <a class="anone" href="taskDetails.html">
-                        <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
-                            <p class="period text-white-50" style="color: black;font-size: 14px;">03/04/2021<br></p>
-                            <p class="period text-white-50" style="color: black;font-size: 14px;">10:00 am<br></p>
-                        </div>
-                    </a>
-                    <a class="anone" href="taskDetails.html">
-                        <p class="text-white" style="margin-top: -15px;">Redactar una propuesta convincente para el cliente en la cual se incluyan: Los servicios que les ofreceremos, cómo se les ofrecerán estos servicios y la duración por la cual los ofreceremos</p>
-                    </a>
-                    <hr style="height: 1px;background-color: #ccc;border: none;margin-top: 25px;">
+                        <a class="anone" href="taskDetails.html">
+                            <p class="text-white" style="margin-top: -15px;">Redactar una propuesta convincente para el cliente en la cual se incluyan: Los servicios que les ofreceremos, cómo se les ofrecerán estos servicios y la duración por la cual los ofreceremos</p>
+                        </a>
+                        <hr style="height: 1px;background-color: #ccc;border: none;margin-top: 25px;">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
-            <div class="row">
-                <div class="col-12 text-left">
-                    <input type="checkbox" id="four">
-                    <label for="four">
-                        <span></span>
+            <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="row">
+                    <div class="col-12 text-left">
+                        <input type="checkbox" id="four">
+                        <label for="four">
+                            <span></span>
+                            <a class="anone" href="taskDetails.html">
+                                <h2 class="text-white">Junta interna de inducción a nuevas herramientas de trabajo</h2>
+                            </a>
+                        </label>
+                        <h3 style="background-color:#E58845; color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">Inno Soluciones<br></h3>
                         <a class="anone" href="taskDetails.html">
-                            <h2 class="text-white">Junta interna de inducción a nuevas herramientas de trabajo</h2>
+                            <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
+                                <p class="period text-white-50" style="color: black;font-size: 14px;">03/10/2021<br></p>
+                                <p class="period text-white-50" style="color: black;font-size: 14px;">2:30 pm<br></p>
+                            </div>
                         </a>
-                    </label>
-                    <h3 style="background-color:#E58845; color: white;border-radius: 5px;border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom-right-radius: 15px;border-bottom-left-radius: 15px;padding-left: 10px;padding-top: 5px;padding-right: 10px;padding-bottom: 5px;display: inline-block;font-size: 21px;">Inno Soluciones<br></h3>
-                    <a class="anone" href="taskDetails.html">
-                        <div style="display: flex;justify-content: space-between;margin-top: 10px;margin-bottom: -10px;">
-                            <p class="period text-white-50" style="color: black;font-size: 14px;">03/10/2021<br></p>
-                            <p class="period text-white-50" style="color: black;font-size: 14px;">2:30 pm<br></p>
-                        </div>
-                    </a>
-                    <a class="anone" href="taskDetails.html">
-                        <p class="text-white" style="margin-top: -15px;">Atender junta de capacitación para las nuevas herramientas que se utilizarán en la empresa.</p>
-                    </a>
+                        <a class="anone" href="taskDetails.html">
+                            <p class="text-white" style="margin-top: -15px;">Atender junta de capacitación para las nuevas herramientas que se utilizarán en la empresa.</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="text-center text-white" style="padding-top: 20px;background-color: #292929;">
+    <footer id="footer" class="text-center text-white" style="padding-top: 20px;background-color: #292929;">
         <p style="padding-bottom: 10px;">© 2021 Todos los derechos reservados</p>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/loader.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
