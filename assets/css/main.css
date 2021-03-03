@@ -3,14 +3,12 @@
 }
 
 .btnCustom {
+    width: 200px;
+    border-radius: 100px;
     text-decoration: none;
-    border: 1px solid rgb(146, 148, 248);
+    border: 1px solid rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
-}
-
-.btnCustom:hover {
-    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
 }
 
 .btnCustom:before {
