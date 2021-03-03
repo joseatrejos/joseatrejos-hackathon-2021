@@ -48,7 +48,7 @@
         <div class="container"><a data-bss-hover-animate="pulse" class="btn btnCustom" href="index.html" style="color: #ededed;margin-top: 40px;">Finalizar Tarea</a></div>
     </main>
     <footer class="text-center text-white" style="padding-top: 20px;background-color: #292929;">
-        <p style="padding-bottom: 10px;">© 2021 Copyright Text</p>
+        <p style="padding-bottom: 10px;">© 2021 Todos los derechos reservados</p>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -63,33 +63,33 @@
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("March 3, 2021 00:37:25").getTime();
-        
+
         // Update the count down every 1 second
         var x = setInterval(function() {
-        
-          // Get today's date and time
-          var now = new Date().getTime();
-            
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-            
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-          // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML ="Restan " + days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-            
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "0d 0h 0m 0s";
-          }
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = "Restan " + days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "0d 0h 0m 0s";
+            }
         }, 1000);
-        </script>
+    </script>
 </body>
 
 </html>

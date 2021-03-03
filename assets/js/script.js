@@ -19,12 +19,12 @@ function toggleRest() {
 
     if(this.counter === 0) {
         hola=true;
-        console.log(this.counter + "funcion 1");
         this.counter++;
+        $("#descansar").show();
     } 
     else if(this.counter === 1) {
         hola=false;
-        console.log(this.counter + "funcion 2");
         this.counter--;
+        $("#descansar").hide();
     }
 }
