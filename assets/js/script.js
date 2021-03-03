@@ -10,21 +10,35 @@ function toggleRest() {
             $("#col-btn2").removeClass("d-none");
         }, 1100);
     }
-    
+
     var cosaClickeable = document.querySelector("#botonDescanso");
     // Static Variable Initialization. On the first click, "this.counter" doesn't exist, hence it's created with a zero value.
-    if( typeof this.counter == 'undefined' ) {
+    if (typeof this.counter == 'undefined') {
         this.counter = 0;
     }
 
-    if(this.counter === 0) {
-        hola=true;
+    if (this.counter === 0) {
+        hola = true;
         this.counter++;
         $("#descansar").show();
-    } 
-    else if(this.counter === 1) {
-        hola=false;
+        scrollToSection();
+    } else if (this.counter === 1) {
+        hola = false;
         this.counter--;
         $("#descansar").hide();
     }
+}
+
+function scrollToSection() {
+    setTimeout(function() {
+        $("body,html").animate({
+                scrollTop: $("#descansar").offset().top
+            },
+            800
+        );
+    }, 1500);
+}
+
+function goToTasks() {
+    window.open("tasks.html", "_self")
 }
